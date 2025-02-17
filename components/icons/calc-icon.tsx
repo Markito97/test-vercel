@@ -2,7 +2,7 @@
 
 export const CalcIcon = () => {
     return <svg
-        className="lucide lucide-calculator text-white opacity-30 w-full h-full stroke-current group-hover:stroke-[1.5px] transition-all duration-300 hover:stroke-[10px]"
+        className="lucide lucide-calculator opacity-30 w-full h-full stroke-current group-hover:stroke-[1.5px] transition-all duration-300 hover:stroke-[10px]"
         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
         <rect width="16" height="20" x="4" y="2" rx="2" />
         <line x1="8" x2="16" y1="6" y2="6" />

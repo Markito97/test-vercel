@@ -12,6 +12,9 @@ export default {
 		animation: {
 			marquee: 'marquee 25s linear infinite',
 			marquee2: 'marquee2 25s linear infinite',
+			dash: 'dash 2s linear infinite',
+			draw: 'draw 2s linear infinite',
+			morph: 'morph 3s ease-in-out infinite',
 		  },
 		  keyframes: {
 			marquee: {
@@ -22,9 +25,23 @@ export default {
 			  '0%': { transform: 'translateX(100%)' },
 			  '100%': { transform: 'translateX(0%)' },
 			},
+			dash: {
+				'0%': { strokeDashoffset: '0' },
+				'100%': { strokeDashoffset: '16' }, // Значение зависит от длины твоего даш-эффекта
+			},
+			draw: {
+				'0%': { strokeDasharray: '0, 3000', strokeDashoffset: '3000' }, // Линия полностью скрыта
+				'100%': { strokeDasharray: '3000, 3000', strokeDashoffset: '0' }, // Линия полностью видна
+			},
+			morph: {
+				'0%': { x: '358', y: '101', width: '272', height: '42', rx: '4' },
+				'50%': { x: '300', y: '80', width: '300', height: '100', rx: '20' },
+				'100%': { x: '358', y: '101', width: '272', height: '42', rx: '4' },
+			},
 		  },
   		colors: {
 			'brand': '#005FB8',
+			'second-brand': '#e7f5ff',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

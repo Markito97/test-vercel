@@ -74,7 +74,7 @@ interface WhatYouGetListItemProps {
 
 export const WhatYouGetListItem = (props: WhatYouGetListItemProps) => {
     return (
-        <div className="sm:h-[200px] text-center bg-white group relative w-full h-full flex flex-col gap-5 p-6 shadow-lg rounded-lg">
+        <div className="sm:h-[230px] text-center bg-white group relative w-full h-full flex flex-col gap-5 p-6 shadow-lg rounded-lg">
             <div className="flex justify-center">{props.icon}</div>
             <div className="text-lg font-medium">{props.text}</div>
         </div>
