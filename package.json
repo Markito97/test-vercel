@@ -22,6 +22,7 @@
     "next": "^15.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "recharts": "^2.15.1",
     "tailwind-merge": "^3.0.1",
     "tailwindcss-animate": "^1.0.7",
     "three": "^0.173.0"
@@ -36,5 +37,8 @@
     "eslint": "^9",
     "eslint-config-next": "15.1.0",
     "@eslint/eslintrc": "^3"
+  },
+  "overrides": {
+    "react-is": "^19.0.0-rc-69d4b800-20241021"
   }
 }

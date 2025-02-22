@@ -28,23 +28,18 @@ export const PossibilitiesList = () => {
             <PossibilitiesBlock
                 title='Калькулятор ценовых категорий'
                 icon={<PriceCalculatorIcon />} />
-
-
             <PossibilitiesBlock
                 title='Прогноз часов пиковой нагрузки'
                 icon={<ForecastIcon />}
             />
-
             <PossibilitiesBlock
                 title='Прогноз электропотребления и управление спросом на рынке электроэнергии'
                 icon={<ForecastEnergyIcon />}
             />
-
             <PossibilitiesBlock
                 title='Прогнозирования цен на электроэнергию и мощность'
                 icon={<ForecastPriceIcon />}
             />
-
             <PossibilitiesBlock
                 title="Выработка рекомендации для сокращения расходов на э/энергию"
                 icon={<></>}
@@ -52,10 +47,6 @@ export const PossibilitiesList = () => {
             <PossibilitiesBlock
                 title="Моделирование электропотребления"
                 icon={<ConsumptionModificationIcon/>}
-            />
-            <PossibilitiesBlock 
-                title="Управление собственной генерацией"
-                icon={<></>}
             />
             <PossibilitiesBlock
                 title="Учет, анализ и контроль потребления электроэнергии. Монитор пользователя"
