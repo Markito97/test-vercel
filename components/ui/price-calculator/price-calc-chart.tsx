@@ -1,13 +1,10 @@
 
 "use client"
-
-import { TrendingUp } from "lucide-react"
-import { Bar, BarChart, CartesianGrid, XAxis } from "recharts"
+import { Bar, BarChart, CartesianGrid, LabelList, XAxis } from "recharts"
 
 import {
     Card,
     CardContent,
-    CardFooter,
 } from "@/components/ui/card"
 import {
     ChartConfig,
@@ -17,6 +14,8 @@ import {
     ChartTooltip,
     ChartTooltipContent,
 } from "@/components/ui/chart"
+
+const formatNumber = (value: number) => value.toLocaleString("ru-RU"); 
 
 const chartData = [
     { name: "3ЦК", energy: 24174033, power: 12134177 },
@@ -53,19 +52,18 @@ export function PriceCalcChart() {
                         />
                         <ChartTooltip content={<ChartTooltipContent hideLabel />} />
                         <ChartLegend content={<ChartLegendContent />} />
-                        <Bar dataKey="energy" stackId="a" fill="#005FB8" name="Э/энергия, тыс.руб" />
-                        <Bar dataKey="power" stackId="a" fill="#e7f5ff" name="Мощность, тыс.руб" />
-                        <Bar dataKey="savings" stackId="a" fill="#1FA95C" name="Экономия, тыс.руб" />
+                        <Bar dataKey="energy" stackId="a" fill="#005FB8" name="Э/энергия, тыс.руб">
+                            <LabelList dataKey="energy" position='center' style={{ fill: '#FFFFFF', fontWeight: 'bold', fontSize: '32px' }} formatter={formatNumber} />
+                        </Bar>
+                        <Bar dataKey="power" stackId="a" fill="#e7f5ff" name="Мощность, тыс.руб" >
+                            <LabelList dataKey="power" position="center" style={{ fill: "#000000", fontWeight: "bold", fontSize: '32px' }} formatter={formatNumber} />
+                        </Bar>
+                        <Bar dataKey="savings" stackId="a" fill="#1FA95C" name="Экономия, тыс.руб">
+                            <LabelList dataKey="savings" position="center" style={{ fill: "#ffffff", fontWeight: "bold", fontSize: '32px' }} formatter={formatNumber} />
+                        </Bar>
                     </BarChart>
                 </ChartContainer>
             </CardContent>
-            <CardFooter className="flex-col items-start gap-2 text-sm">
-                <div className="flex gap-2 font-medium leading-none">
-                    Затраты на электроэнергию
-                    снижены на 15%
-                    <TrendingUp className="h-4 w-4" />
-                </div>
-            </CardFooter>
         </Card>
     )
 }

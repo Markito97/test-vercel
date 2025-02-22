@@ -2,12 +2,19 @@ import { PriceCalcChart } from "@/components/ui/price-calculator/price-calc-char
 import { PricingOptimizationTable } from "@/components/ui/price-calculator/price-calc-optimization-table";
 import { PriceCategoryBenefits } from "@/components/ui/price-calculator/price-category-benefits";
 import { PriceCategoryCalculator } from "@/components/ui/price-calculator/price-category-calculator";
+import { Metadata } from "next";
 import { Comic_Neue } from "next/font/google";
 
 const comicNeue = Comic_Neue({
   weight: ['400', '700'],
   subsets: ['latin',],
 });
+
+export const metadata: Metadata = {
+  title: "Расчет ценовых категорий электроэнергии",
+  description: 'Калькулятор ценовых категорий – программа, которая определяет ценовые категории электроэнергии для оплаты электроэнергии на предприятии и позволяет экономить от 5 % затрат на электроэнергию ежемесячно.',
+  keywords: 'калькулятор, ценовая категория, программа'
+};
 
 export default function PriceCalculator() {
   return <div>
@@ -35,6 +42,10 @@ export default function PriceCalculator() {
           </div>
           <div className="mt-8 flex flex-col gap-8 p-8 bg-white rounded-md shadow-xl">
             <PricingOptimizationTable />
+            <h3 className={`${comicNeue.className} text-xl font-bold`}>
+              Затраты на электроэнергию
+              снижены на 15%
+            </h3>
             <PriceCalcChart />
           </div>
         </div>
