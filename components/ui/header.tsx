@@ -5,6 +5,8 @@ import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMe
 import Link from "next/link"
 import React from "react"
 import { ListItem } from "./list-item"
+import { Menu } from "lucide-react"
+
 
 const components: { title: string; href: string; description: string }[] = [
     {
@@ -45,7 +47,7 @@ export const Header = () => {
                         <Logo />
                         <LogoText />
                     </Link>
-                    <NavigationMenu>
+                    <NavigationMenu className="relative z-10 flex-1 items-center justify-center hidden pl-8 sm:space-x-4 lg:flex h-16">
                         <NavigationMenuList>
                             <NavigationMenuItem>
                                 <NavigationMenuTrigger>Компоненты</NavigationMenuTrigger>
@@ -85,7 +87,11 @@ export const Header = () => {
                         </Button>
                     </div>
                 </div>
-                <div className="inset-y-0 flex mr-2 items-center px-4 lg:hidden"></div>
+                <div className="inset-y-0 flex mr-2 items-center px-4 lg:hidden">
+                    <Button variant='ghost'>
+                        <Menu absoluteStrokeWidth />
+                    </Button>
+                </div>
             </div>
         </nav>
     </header>
