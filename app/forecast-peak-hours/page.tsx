@@ -1,3 +1,4 @@
+import { ForecastPeakHoursSchemaIcon } from "@/components/icons/forecast-peak-hours-schema-icon";
 import { ForecastPeakHoursBenefits } from "@/components/ui/forecast-peak-hours/forecast-peak-hours-benefits";
 import { ForecastPeakHoursChart } from "@/components/ui/forecast-peak-hours/forecast-peak-hours-chart";
 import { ForecastPeakHoursInfo } from "@/components/ui/forecast-peak-hours/forecast-peak-hours-info";
@@ -29,10 +30,19 @@ export default function ForecastPeakHours() {
                         <ForecastPeakHoursInfo />
                     </div>
                     <div className='mt-8'>
-                        <ForecastPeakHoursBenefits/>
+                        <ForecastPeakHoursBenefits />
                     </div>
                     <div className='mt-8'>
-                        <ForecastPeakHoursChart/>
+                        <h3 className={`${comicNeue.className} text-2xl font-bold text-brand`}>
+                            Как работает модуль прогноза часов пиковой нагрузки
+                        </h3>
+                    </div>
+                    <div className="mt-8 flex flex-col gap-8 p-8 bg-white rounded-md shadow-xl">
+                        <ForecastPeakHoursSchemaIcon />
+                        <h3 className={`${comicNeue.className} text-xl font-bold`}>
+                            Сократив величину оплачиваемой мощности без снижения объемов потребления, потребитель может сократить свои затраты на покупку электроэнергии.
+                        </h3>
+                        <ForecastPeakHoursChart />
                     </div>
                 </div>
             </section>

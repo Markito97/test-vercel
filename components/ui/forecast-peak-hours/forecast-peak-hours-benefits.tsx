@@ -6,16 +6,16 @@ const comicNeue = Comic_Neue({
 });
 
 export const ForecastPeakHoursBenefits = () => {
-    return <div>
+return <div>
         <h3 className={`${comicNeue.className} text-2xl font-bold text-brand`}>Что вы получаете</h3>
         <div className="mt-8 grid grid-cols-12 gap-4">
-            <div className="col-span-12 lg:col-span-5 bg-brand p-4 text-white rounded-md">
+            <div className="col-span-12 lg:col-span-4 bg-brand p-4 text-white rounded-md shadow-lg animate-in fade-in slide-in-from-bottom-10 duration-500">
                 Прогноз часы пиковой нагрузки с максимально высокой точностью
             </div>
-            <div className="col-span-12 lg:col-span-5 lg:col-start-8 bg-brand p-4 text-white rounded-md">
+            <div className="col-span-12 lg:col-span-4 bg-brand p-4 text-white rounded-md shadow-lg animate-in fade-in slide-in-from-bottom-10 duration-500">
                 Организация режима потребления энергоресурсов с учетом данных часов пиковых нагрузок
             </div>
-            <div className="col-span-12 lg:col-span-5 lg:col-start-8 bg-brand p-4 text-white rounded-md">
+            <div className="col-span-12 lg:col-span-4 bg-brand p-4 text-white rounded-md shadow-lg animate-in fade-in slide-in-from-bottom-10 duration-500">
                 Уменьшение расходов на электроэнергию за отчетный период
             </div>
         </div>
