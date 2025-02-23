@@ -2,7 +2,6 @@ import { UserMonitorInfo } from "@/components/ui/user-monitor/UserMonitorInfo";
 import { UserMonitorSlider } from "@/components/ui/user-monitor/UserMonitorSlider";
 import { Metadata } from "next";
 import { Comic_Neue } from "next/font/google";
-import Image from "next/image";
 
 const comicNeue = Comic_Neue({
     weight: ['400', '700'],
@@ -30,12 +29,6 @@ export default function ElectricityManagement() {
                     </div>
                     <div className="mt-8 flex flex-col gap-8 p-8 bg-white rounded-md shadow-xl">
                         <UserMonitorSlider/>
-                        {/* <Image
-                            src="/all.png"
-                            width={1000}
-                            height={100}
-                            alt="Мониторы пользователя"
-                            /> */}
                     </div>
                 </div>
             </section>
