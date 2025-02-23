@@ -24,7 +24,7 @@ export default function Home() {
     <div>
       <main className="relative min-h-screen">
         <section
-          className="relative -mt-[65px] pb-14 md:pb-24"
+          className="relative -mt-[65px]"
         >
           <div className="sm:py-18 container relative mx-auto px-6 py-16 md:py-24 lg:px-16 lg:py-24 xl:px-20 pt-8 pb-10 md:pt-16 overflow-hidden">
             <div className="relative">
