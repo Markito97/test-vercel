@@ -52,6 +52,9 @@ export default {
 					'100%': { 'clip-path': 'inset(0 100% 0 0)' },
 				},
 			},
+			cursor: {
+				'svg-zap': 'url("/zap.svg") 16 16, auto'
+			},
 			colors: {
 				'brand': '#005FB8',
 				'second-brand': '#e7f5ff',

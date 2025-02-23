@@ -23,40 +23,40 @@ export const PossibilitiesList = () => {
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-4 xl:gap-3 2xl:gap-6 md:grid-cols-12">
             <PossibilitiesBlock
                 title='Калькулятор ценовых категорий'
-                icon={<PriceCalculatorIcon />} />
+                icon={<PriceCalculatorIcon />} 
+                href="/price-calculator"
+                />
+            
             <PossibilitiesBlock
                 title='Прогноз часов пиковой нагрузки'
                 icon={<ForecastIcon />}
+                href="/forecast-peak-hours"
             />
             <PossibilitiesBlock
                 title='Прогноз электропотребления предприятия'
                 icon={<ForecastEnergyIcon />}
+                href="/forecast-enterprise"
             />
             <PossibilitiesBlock
                 title='Прогнозирования цен на электроэнергию и мощность'
                 icon={<ForecastPriceIcon />}
+                href="/forecast-prices"
             />
             <PossibilitiesBlock
                 title='Управление спросом на электроэнергию'
                 icon={<></>}
+                href="/electricity-management"
             />
             <PossibilitiesBlock
                 title="Учет, анализ и контроль потребления электроэнергии на предприятии"
                 icon={<></>}
+                href="/control-electricity"
             />
             <PossibilitiesBlock
                 title="Монитор пользователя"
                 icon={<></>}
+                href="/user-monitor"
             />
-            {/* <PossibilitiesBlock
-                title="Выработка рекомендации для сокращения расходов на э/энергию"
-                icon={<></>}
-            />
-            <PossibilitiesBlock
-                title="Моделирование электропотребления"
-                icon={<ConsumptionModificationIcon />}
-            />
-            */}
         </div>
     </section>
 }

@@ -5,7 +5,6 @@ import { HeroMarquee } from "@/components/ui/hero-marquee";
 import { PossibilitiesList } from "@/components/ui/possibilities-list";
 import { WhatYouGetList } from "@/components/ui/what-you-get-list";
 import { ReviewsList } from "@/components/ui/reviews-list";
-import { ContactUs } from "@/components/ui/contact-us";
 
 
 const comicNeue = Comic_Neue({
@@ -59,7 +58,6 @@ export default function Home() {
         <WhatYouGetList />
         <PossibilitiesList />
         <ReviewsList />
-        <ContactUs />
       </main>
     </div>
   );
