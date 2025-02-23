@@ -1,5 +1,3 @@
-
-
 export const ForecastPeakHoursInfo = () => {
     return <div>
         <p>
