@@ -47,6 +47,10 @@ export const PossibilitiesList = () => {
                 title="Учет, анализ и контроль потребления электроэнергии на предприятии"
                 icon={<></>}
             />
+            <PossibilitiesBlock
+                title="Монитор пользователя"
+                icon={<></>}
+            />
             {/* <PossibilitiesBlock
                 title="Выработка рекомендации для сокращения расходов на э/энергию"
                 icon={<></>}
