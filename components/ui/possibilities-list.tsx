@@ -19,9 +19,6 @@ export const PossibilitiesList = () => {
             <h2 className={`${roboto.className} text-3xl font-bold text-brand lg:text-4xl`}>
                 Компоненты программы
             </h2>
-            <p className="mt-4 text-lg text-gray-600">
-                Каждый модуль предназначен для решения отдельных задач: мониторинг, расчет показателей и оптимизация использования ресурсов.
-            </p>
         </div>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-4 xl:gap-3 2xl:gap-6 md:grid-cols-12">
             <PossibilitiesBlock

@@ -54,9 +54,6 @@ export const WhatYouGetList = () => {
                 <h2 className={`${roboto.className} text-3xl font-bold text-brand lg:text-4xl`}>
                     Что вы получите с нашей системой
                 </h2>
-                <p className="mt-4 text-lg text-gray-600">
-                    Экономьте, повышайте производительность и расширяйте возможности бизнеса
-                </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {whatYouGetList.map((item) => (

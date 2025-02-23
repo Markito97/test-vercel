@@ -14,9 +14,9 @@ export const HeroMarquee = () => {
                     <div className="min-w-[100px]"><RegisterIcon /></div>
                 </Marquee>
             </div>
-            <p className="w-full text-center text-sm text-foreground-lighter mt-6 lg:mt-8">
-                    Программа ЭнергоБИТ включена в реестр российского ПО (реестровая запись № 23968 от 06.09.2024г.)
-                </p>
+            <p className="w-full font-bold text-gray-700 text-center text-sm text-foreground-lighter mt-6 lg:mt-8">
+                Программа ЭнергоБИТ включена в реестр российского ПО (реестровая запись № 23968 от 06.09.2024г.)
+            </p>
         </div>
     );
 }
