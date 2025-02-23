@@ -25,9 +25,6 @@ export default function PriceCalculator() {
             <h2 className={`${comicNeue.className} text-3xl font-bold text-brand lg:text-4xl`}>
               Калькулятор ценовых категорий
             </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              Определим выгодную ценовую категорию для оплаты за электроэнергию!
-            </p>
           </div>
           <div className="flex flex-col gap-8 p-8 bg-white rounded-md shadow-xl">
             <PriceCategoryCalculator />
