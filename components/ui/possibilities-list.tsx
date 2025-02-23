@@ -4,7 +4,6 @@ import { PriceCalculatorIcon } from "../icons/price-calculator-icon"
 import { ForecastIcon } from "../icons/forecast-icon"
 import { ForecastEnergyIcon } from "../icons/forecast-energy-icon"
 import { ForecastPriceIcon } from "../icons/forecast-price-icon"
-import { ConsumptionModificationIcon } from "../icons/consumption-modification-icon"
 
 
 const roboto = Roboto({
@@ -33,7 +32,7 @@ export const PossibilitiesList = () => {
                 icon={<ForecastIcon />}
             />
             <PossibilitiesBlock
-                title='Прогноз электропотребления и управление спросом на рынке электроэнергии'
+                title='Прогноз электропотребления предприятия'
                 icon={<ForecastEnergyIcon />}
             />
             <PossibilitiesBlock
@@ -41,17 +40,21 @@ export const PossibilitiesList = () => {
                 icon={<ForecastPriceIcon />}
             />
             <PossibilitiesBlock
+                title='Управление спросом на электроэнергию'
+                icon={<></>}
+            />
+            {/* <PossibilitiesBlock
                 title="Выработка рекомендации для сокращения расходов на э/энергию"
                 icon={<></>}
             />
             <PossibilitiesBlock
                 title="Моделирование электропотребления"
-                icon={<ConsumptionModificationIcon/>}
+                icon={<ConsumptionModificationIcon />}
             />
             <PossibilitiesBlock
                 title="Учет, анализ и контроль потребления электроэнергии. Монитор пользователя"
                 icon={<></>}
-            />
+            /> */}
         </div>
     </section>
 }
