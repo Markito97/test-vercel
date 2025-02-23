@@ -43,6 +43,10 @@ export const PossibilitiesList = () => {
                 title='Управление спросом на электроэнергию'
                 icon={<></>}
             />
+            <PossibilitiesBlock
+                title="Учет, анализ и контроль потребления электроэнергии на предприятии"
+                icon={<></>}
+            />
             {/* <PossibilitiesBlock
                 title="Выработка рекомендации для сокращения расходов на э/энергию"
                 icon={<></>}
@@ -51,10 +55,7 @@ export const PossibilitiesList = () => {
                 title="Моделирование электропотребления"
                 icon={<ConsumptionModificationIcon />}
             />
-            <PossibilitiesBlock
-                title="Учет, анализ и контроль потребления электроэнергии. Монитор пользователя"
-                icon={<></>}
-            /> */}
+            */}
         </div>
     </section>
 }
