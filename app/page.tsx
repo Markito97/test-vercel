@@ -32,11 +32,11 @@ export default function Home() {
                   <div className="relative z-10 lg:h-auto pt-[90px] lg:pt-[90px] lg:min-h-[300px] flex flex-col items-center justify-center sm:mx-auto md:w-3/4 lg:mx-0 lg:w-full gap-4 lg:gap-8">
                     <div className="flex flex-col items-center">
                       <h1
-                        className={`${comicNeue.className} text-4xl whitespace-nowrap sm:text-5xl sm:leading-none lg:text-5xl`}
+                        className={`${comicNeue.className} text-gray-700 font-bold text-4xl whitespace-nowrap sm:text-5xl sm:leading-none lg:text-5xl`}
                       >
-                          Энергобит - ключ к энергоэффективности
+                          <span className="text-brand">Энергобит</span> - ключ к энергоэффективности
                       </h1>
-                      <p className={`${roboto.className} pt-2 text-foreground my-3 text-sm sm:mt-5 lg:mb-0 sm:text-base lg:text-lg`}>
+                      <p className={`${roboto.className} font-bold text-gray-700 pt-2 text-foreground my-3 text-sm sm:mt-5 lg:mb-0 sm:text-base lg:text-lg`}>
                         Решения на базе искусственного интеллекта для управления энергозатратами. <br /> Снижайте расходы на электроэнергию, повышайте эффективность и сохраняйте ресурсы без лишних усилий.
                       </p>
                     </div>
