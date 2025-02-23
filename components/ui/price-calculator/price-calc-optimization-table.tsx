@@ -11,11 +11,6 @@ export const PricingOptimizationTable = () => {
     <div className="overflow-x-auto">
       <Table className="border border-gray-300">
         <TableHeader className="font-bold">
-          <TableRow>
-            <TableHead colSpan={7} className="text-center text-xl font-bold border-b border-gray-300">
-              Сравнение расходов на электроэнергию по 3 и 1 ценовым категориям, (без НДС)
-            </TableHead>
-          </TableRow>
           <TableRow className="border border-gray-300">
             <TableHead rowSpan={2} className="border-b border-gray-300 font-bold">Показатели</TableHead>
             <TableHead rowSpan={2}>Средний объем потребления, кВт*ч, кВт в месяц</TableHead>
