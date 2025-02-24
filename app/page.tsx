@@ -4,8 +4,6 @@ import React from "react";
 import { HeroMarquee } from "@/components/ui/hero-marquee";
 import { PossibilitiesList } from "@/components/ui/possibilities-list";
 import { WhatYouGetList } from "@/components/ui/what-you-get-list";
-import { ReviewsList } from "@/components/ui/reviews-list";
-
 
 const comicNeue = Comic_Neue({
   weight: ['400', '700'],
@@ -57,7 +55,6 @@ export default function Home() {
         <HeroMarquee />
         <WhatYouGetList />
         <PossibilitiesList />
-        <ReviewsList />
       </main>
     </div>
   );

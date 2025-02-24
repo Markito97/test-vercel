@@ -34,7 +34,7 @@ export default function ForecastPeakHours() {
                         </h3>
                         <ForecastPricesSchemaIcon />
                         <h3 className={`${comicNeue.className} text-xl font-bold`}>
-                            Прогнозируемые цена на электроэнергию
+                            Прогнозируемая цена на электроэнергию
                         </h3>
                         <Image
                             src='/Снимок экрана 2025-02-23 в 19.47.31.png'

@@ -27,32 +27,37 @@ export const PossibilitiesList = () => {
                 title='Калькулятор ценовых категорий'
                 icon={<PriceCalculatorIcon />}
                 href="/price-calculator"
+                possibilities={['Расчет ценовых категорий', 'Рекомендации по выбору ценовой категории']}
             />
-
             <PossibilitiesBlock
                 title='Прогноз часов пиковой нагрузки'
                 icon={<ForecastIcon />}
                 href="/forecast-peak-hours"
+                possibilities={['Организация режима потребления', 'Уменьшение расходов на электроэнергию']}
             />
             <PossibilitiesBlock
                 title='Прогноз электропотребления предприятия'
                 icon={<ForecastEnergyIcon />}
                 href="/forecast-enterprise"
+                possibilities={['Прогноз объема потребления', 'Расчет затрат на электроэнергию', 'Предоставление скидки на оптовую цену']}
             />
             <PossibilitiesBlock
                 title='Прогнозирования цен на электроэнергию и мощность'
                 icon={<ForecastPriceIcon />}
                 href="/forecast-prices"
+                possibilities={['Грамотное составление бюджета','Погрешность прогноза до 5%']}
             />
             <PossibilitiesBlock
                 title="Монитор пользователя"
                 icon={<UserMonitorIcon/>}
                 href="/user-monitor"
+                possibilities={['100+ гибко настраиваемых виджетов', 'Данные в реальном времени']}
             />
             <PossibilitiesBlock
                 title="Моделирование электропотребления"
                 icon={<ConsumptionModificationIcon />}
                 href="/energy-simulation"
+                possibilities={['Перераспределение потребления из пиковых часов', 'Настройка правил потребления под инфраструктуру', 'Расчёт экономического эффекта']}
             />
         </div>
     </section>
